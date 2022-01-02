@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    color: #2b2b2b;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+.section-ttl {
+    position: relative;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 33px;
+    padding-bottom: 24px;
+}
+
+.section-ttl::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    width: 40px;
+    height: 1px;
+    margin: 0 8px;
+    background: #333;
+    transform: translateX(-50%);
+}
+
+.section-contents {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: 1.4px;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* main-visual */
+.main-visual {
+    width: 100%;
+    height: 640px;
+    text-align: center;
+    background-image: url(img/header.png);
+    background-size: cover;
+}
+
+.container-inner {
+    color: #fff;
+    padding-top: 300px;
+}
+
+.main-visual-title {
+    font-size: 120px;
+}
+
+.main-visual-sub-ttl {
+    font-size: 16px;
+}
+
+.main-visual-sub-ttl::before,
+.main-visual-sub-ttl::after {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    margin: 0 8px;
+    background: #fff;
+    vertical-align: middle;
+}
+
+/* concept */
+#concept {
+    width: 100%;
+    padding: 80px 0;
+    background: linear-gradient(#fff 70%, #ededed 30%);
+}
+
+.concept-img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* work */
+#work {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.work-detail {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 1680px;
+   
+       
+}
+
+.work-contents {
+    width: 420px;
+    height: auto;
+    
+}
+
+
+
+.work-detail img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.work-detail h3 {
+    font-size: 24px;
+    font-weight: 500px;
+    padding: 10px 0;
+}
+
+.work-detail p {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 1.4px;
+    margin-bottom: 80px;
+}
+
+.wedding {
+    margin-top: 120px;
+}
+
+/* florist */
+#florist {
+    width: 100%;
+    padding: 80px 0;
+    background: linear-gradient(#ededed 60%, #fff 40%);
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column h3 {
+    font-size: 24px;
+    font-weight: 500px;
+    padding: 10px 0;
+}
+
+.column-staff {
+    width: 30%;
+    height: auto;
+}
+.column-staff img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.column-staff p {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 1.4px;
+
+}
+
+.column-staff img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* information */
+#shop-information {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.information-detail {
+    display: flex;
+    justify-content: space-around;
+}
+
+.information-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.information-table {
+    text-align: left;
+}
+
+
+.adress, .tel, .Business-hours, .access {
+    position: relative;
+
+}
+
+.adress::after, .tel::after, .Business-hours::after, .access::after {
+    position: absolute;
+    content: '';
+    top: 25%;
+    right: 100%;
+    width: 0.5px;
+    height: 40px;
+    margin: 0 8px;
+    background: #333;
+    transform: translateX(-50%);
+}
+
+.information-table th {
+    padding-right: 30px;
+}
+
+/* contact-us */
+#contact-us {
+    width: 100%;
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+        url('img/contact_us.png');
+}
+
+.btn {
+    margin: 0 auto;
+    width: 300px;
+    height: 80px;
+    border: 1px solid #727171;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #fff;
+
+}
+
+.far {
+    padding-left: 30px;
+}
+
+.btn p {
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.8;
+    letter-spacing: 1.4px;
+}
